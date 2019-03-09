@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <!--<link rel="stylesheet" href="./assets/css/reset.css">-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand text-center" href="#">Crystals Collector</a>
+    </nav>
+    <div class="container">
+        <div class="jumbotron-fluid">
+            <div class="card-header bg-info">
+                <h2>How to Play</h2>
+            </div>
+            <div class="card instructions mb-3 px-2 pt-3">
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to the random number, you lose the game if your total
+                    score goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each time the game starts, the the values of each crystal will change.
+                </p>
+                <div>
+                    <button class="btn btn-primary btn-lg my-2 my-sm-0" type="submit">Play</button>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap justify-content-around">
+            <div class="card text-white bg-light mb-3 flex-fill" style="max-width: 30rem;">
+                <div class="card-header">Scores</div>
+                <div class="card-body">
+                    <h4 class="card-title">Wins: <span class="badge-pill badge-info px-4 py-2">0</span> </h4>
+                    <br>
+                    <h4 class="card-title">Losses: <span class="badge-pill badge-danger px-4 py-2">0</span></h4>
+                </div>
+            </div>
+            <div class="card text-white bg-light mb-3 flex-fill" style="max-width: 30rem;">
+                <div class="card-header">Values</div>
+                <div class="card-body">
+                    <h4 class="card-title">Number to match: <span class="badge-pill badge-secondary px-4 py-2">0</span>
+                    </h4>
+                    <br>
+                    <div class="d-flex justify-content-between align-content-center">
+                        <h4 class="card-title">Current total: </h4>
+                        <h4 class="badge-pill badge-secondary px-4 py-2">0</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap justify-content-around">
+            <div class="card text-white bg-success mb-3" style="max-width: 65rem;">
+                <div class="card-body">
+                    <img src="./assets/images/blue-gem.png" class="img-fluid img-thumbnail bg-transparent crystal-img"
+                        alt="blue gem">
+                    <img src="./assets/images/green-gem.png"
+                        class="img-fluid img-thumbnail ml-2 bg-transparent crystal-img" alt="green gem">
+                    <img src="./assets/images/pink-gem.png"
+                        class="img-fluid img-thumbnail ml-2 bg-transparent crystal-img" alt="pink gem">
+                    <img src="./assets/images/purple-gem.png"
+                        class="img-fluid img-thumbnail ml-2 bg-transparent crystal-img" alt="purple gem">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
