@@ -40,43 +40,66 @@
                     Each time the game starts, the the values of each crystal will change.
                 </p>
                 <div>
-                    <button class="btn btn-primary btn-lg my-2 my-sm-0" type="submit">Play</button>
+                    <button class="btn btn-primary btn-lg my-2 my-sm-2" type="submit">Play Game</button>
                 </div>
             </div>
         </div>
-        <div class="row d-flex flex-wrap justify-content-around">
-            <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
-                <div class="card-header">Scores</div>
-                <div class="card-body">
-                    <h4 class="card-title">Wins: <span class="badge-pill badge-info px-4 py-2">0</span> </h4>
-                    <br>
-                    <h4 class="card-title">Losses: <span class="badge-pill badge-danger px-4 py-2">0</span></h4>
+        <div class="d-none game mt-5">
+            <div class="row d-flex flex-wrap justify-content-around">
+                <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
+                    <div class="card-header">Scores</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Wins: <span id="wins-text"
+                                class="badge-pill badge-info px-4 py-2">0</span> </h4>
+                        <br>
+                        <h4 class="card-title">Losses: <span id="losses-text"
+                                class="badge-pill badge-danger px-4 py-2">0</span></h4>
+                    </div>
+                </div>
+                <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
+                    <div class="card-header">Values</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Number to match: <span id="randomnumber-text"
+                                class="badge-pill badge-secondary px-4 py-2 text-md-right">0</span>
+                        </h4>
+                        <br>
+                        <div class="d-flex justify-content-between align-content-center">
+                            <h4 class="card-title">Current total: <span id="playertotal-text"
+                                    class="badge-pill badge-secondary px-4 py-2">0</span></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
-                <div class="card-header">Values</div>
-                <div class="card-body">
-                    <h4 class="card-title">Number to match: <span class="badge-pill badge-secondary px-4 py-2 text-md-right">0</span>
-                    </h4>
-                    <br>
-                    <div class="d-flex justify-content-between align-content-center">
-                        <h4 class="card-title">Current total: <span
-                                class="badge-pill badge-secondary px-4 py-2">0</span></h4>
+            <div class="row d-flex flex-wrap justify-content-around">
+                <div class="card col-md-11 bg-dark mb-3">
+                    <div class="card-body mx-auto">
+                        <img src="./assets/images/blue-gem.png" class="img-thumbnail bg-transparent crystal-img"
+                            alt="blue gem">
+                        <img src="./assets/images/green-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
+                            alt="green gem">
+                        <img src="./assets/images/pink-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
+                            alt="pink gem">
+                        <img src="./assets/images/purple-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
+                            alt="purple gem">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row d-flex flex-wrap justify-content-around">
-            <div class="card col-md-11 text-white bg-success mb-3">
-                <div class="card-body mx-auto">
-                    <img src="./assets/images/blue-gem.png" class="img-thumbnail bg-transparent crystal-img"
-                        alt="blue gem">
-                    <img src="./assets/images/green-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
-                        alt="green gem">
-                    <img src="./assets/images/pink-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
-                        alt="pink gem">
-                    <img src="./assets/images/purple-gem.png" class="img-thumbnail ml-2 bg-transparent crystal-img"
-                        alt="purple gem">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You lost!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
