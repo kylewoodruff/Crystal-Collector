@@ -40,14 +40,16 @@
                     Each time the game starts, the the values of each crystal will change.
                 </p>
                 <div>
-                    <button class="btn btn-primary btn-lg my-2 my-sm-2" type="submit">Play Game</button>
+                    <button id='start-game' class="btn btn-primary btn-lg my-2 my-sm-2" type="submit">Play Game</button>
                 </div>
             </div>
         </div>
         <div class="d-none game mt-5">
             <div class="row d-flex flex-wrap justify-content-around">
                 <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
-                    <div class="card-header">Scores</div>
+                    <div class="card-header">
+                        <h2>Scores</h2>
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title">Wins: <span id="wins-text"
                                 class="badge-pill badge-info px-4 py-2">0</span> </h4>
@@ -57,7 +59,9 @@
                     </div>
                 </div>
                 <div class="card col-md-5 text-white bg-light mb-3 flex-fill">
-                    <div class="card-header">Values</div>
+                    <div class="card-header">
+                        <h2>Values</h2>
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title">Number to match: <span id="randomnumber-text"
                                 class="badge-pill badge-secondary px-4 py-2 text-md-right">0</span>
@@ -89,22 +93,30 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <h5 class="modal-title">End of Round</h5>
                     </div>
                     <div class="modal-body">
-                        <p>You lost!</p>
+                        <p id="status-text"></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="reset" type="button" class="btn btn-secondary" data-dismiss="modal">Start
+                            over</button>
+                        <button id="continue" type="button" class="btn btn-primary"
+                            data-dismiss="modal">Continue</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js"></script>
 </body>
 
